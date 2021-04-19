@@ -191,8 +191,10 @@ Now, try to run QEMU ARM user emulator:
 
 \begin{bashinput}
 $ qemu-arm hello
-/lib/ld-uClibc.so.0: No such file or directory
 \end{bashinput}
+\begin{terminaloutput}
+/lib/ld-uClibc.so.0: No such file or directory
+\end{terminaloutput}
 
 What's happening is that \code{qemu-arm} is missing the shared C library
 (compiled for ARM) that this binary uses. Let's find it in our newly
